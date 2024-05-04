@@ -1,0 +1,29 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BreakfastApp.Views.LogoutPage"
+             Title="Logout"
+             BackgroundColor="Black">
+
+    <StackLayout>
+
+        <Label Text="See You Soon"
+               TextColor="White"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"/>
+
+        <Label Text="Are you sure you want to logout?"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               TextColor="White"/>
+
+        <!-- Circular Button -->
+        <Button Text="Logout"
+                Clicked="OnLogoutClicked"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                BackgroundColor="#ff0000"
+                TextColor="White"
+                CornerRadius="{Binding Source={RelativeSource Self}, Path=Height}"/>
+
+    </StackLayout>
+</ContentPage>

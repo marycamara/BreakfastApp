@@ -1,0 +1,49 @@
+﻿<Properties StartupConfiguration="{72FAD17A-AD1C-4F95-BD85-E15F58921CFE}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ViewModels/UpdateViewModel.cs">
+    <Files>
+      <File FileName="Views/MainPage.xaml" />
+      <File FileName="Views/ProfilePage.xaml" />
+      <File FileName="Views/UpdatePage.xaml" Line="30" Column="16" />
+      <File FileName="../../../../../../usr/local/share/dotnet/packs/Microsoft.Maui.Resizetizer.Sdk/7.0.101/targets/Microsoft.Maui.Resizetizer.targets" />
+      <File FileName="../../../../../../usr/local/share/dotnet/sdk/8.0.203/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.RuntimeIdentifierInference.targets" />
+      <File FileName="ViewModels/CreateViewModel.cs" Line="36" Column="9" />
+      <File FileName="ViewModels/UpdateViewModel.cs" Line="13" Column="1" />
+      <File FileName="Views/CreatePage.xaml.cs" />
+      <File FileName="Views/EditProfilePage.xaml.cs" />
+      <File FileName="Views/MainPage.xaml.cs" />
+      <File FileName="Views/LoginPage.xaml" />
+      <File FileName="Views/EditProfilePage.xaml" />
+      <File FileName="Views/LoginPage.xaml.cs" />
+      <File FileName="Views/ProfilePage.xaml.cs" />
+      <File FileName="Views/UpdatePage.xaml.cs" />
+      <File FileName="MauiProgram.cs" />
+      <File FileName="ViewModels/MainViewModel.cs" />
+      <File FileName="AppShell.xaml" />
+      <File FileName="Views/CreatePage.xaml" Line="29" Column="26" />
+      <File FileName="Models/BreakfastList.cs" />
+      <File FileName="BreakfastStore.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BreakfastApp">
+            <Node name="BreakfastApp">
+              <Node name="ViewModels" expanded="True">
+                <Node name="UpdateViewModel.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.BreakfastApp PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E8128979-4EA1-4853-ADDF-9D20FE55E933" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E8128979-4EA1-4853-ADDF-9D20FE55E933" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

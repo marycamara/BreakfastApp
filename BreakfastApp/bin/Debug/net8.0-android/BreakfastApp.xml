@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BreakfastApp</name>
+    </assembly>
+    <members>
+        <member name="T:BreakfastApp.ViewModels.CreateViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:BreakfastApp.ViewModels.CreateViewModel.Name">
+            <inheritdoc cref="F:BreakfastApp.ViewModels.CreateViewModel.name"/>
+        </member>
+        <member name="P:BreakfastApp.ViewModels.CreateViewModel.ImageUri">
+            <inheritdoc cref="F:BreakfastApp.ViewModels.CreateViewModel.imageUri"/>
+        </member>
+        <member name="P:BreakfastApp.ViewModels.CreateViewModel.Description">
+            <inheritdoc cref="F:BreakfastApp.ViewModels.CreateViewModel.description"/>
+        </member>
+        <member name="P:BreakfastApp.ViewModels.CreateViewModel.Ingredients">
+            <inheritdoc cref="F:BreakfastApp.ViewModels.CreateViewModel.ingredients"/>
+        </member>
+        <member name="P:BreakfastApp.ViewModels.CreateViewModel.AddOn">
+            <inheritdoc cref="F:BreakfastApp.ViewModels.CreateViewModel.addOn"/>
+        </member>
+        <member name="P:BreakfastApp.ViewModels.CreateViewModel.Nutrition">
+            <inheritdoc cref="F:BreakfastApp.ViewModels.CreateViewModel.nutrition"/>
+        </member>
+        <member name="F:BreakfastApp.ViewModels.CreateViewModel.createCommand">
+            <summary>The backing field for <see cref="P:BreakfastApp.ViewModels.CreateViewModel.CreateCommand"/>.</summary>
+        </member>
+        <member name="P:BreakfastApp.ViewModels.CreateViewModel.CreateCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:BreakfastApp.ViewModels.CreateViewModel.Create"/>.</summary>
+        </member>
+        <member name="T:BreakfastApp.ViewModels.MainViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:BreakfastApp.ViewModels.MainViewModel.Breakfasts">
+            <inheritdoc cref="F:BreakfastApp.ViewModels.MainViewModel.breakfasts"/>
+        </member>
+        <member name="P:BreakfastApp.ViewModels.MainViewModel.IsRefreshing">
+            <inheritdoc cref="F:BreakfastApp.ViewModels.MainViewModel.isRefreshing"/>
+        </member>
+        <member name="F:BreakfastApp.ViewModels.MainViewModel.refreshCommand">
+            <summary>The backing field for <see cref="P:BreakfastApp.ViewModels.MainViewModel.RefreshCommand"/>.</summary>
+        </member>
+        <member name="P:BreakfastApp.ViewModels.MainViewModel.RefreshCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:BreakfastApp.ViewModels.MainViewModel.Refresh"/>.</summary>
+        </member>
+        <member name="F:BreakfastApp.ViewModels.MainViewModel.deleteCommand">
+            <summary>The backing field for <see cref="P:BreakfastApp.ViewModels.MainViewModel.DeleteCommand"/>.</summary>
+        </member>
+        <member name="P:BreakfastApp.ViewModels.MainViewModel.DeleteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:BreakfastApp.ViewModels.MainViewModel.Delete(System.Int32)"/>.</summary>
+        </member>
+        <member name="F:BreakfastApp.ViewModels.MainViewModel.goToUpdateCommand">
+            <summary>The backing field for <see cref="P:BreakfastApp.ViewModels.MainViewModel.GoToUpdateCommand"/>.</summary>
+        </member>
+        <member name="P:BreakfastApp.ViewModels.MainViewModel.GoToUpdateCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:BreakfastApp.ViewModels.MainViewModel.GoToUpdate(System.Int32)"/>.</summary>
+        </member>
+        <member name="F:BreakfastApp.ViewModels.MainViewModel.goToCreateCommand">
+            <summary>The backing field for <see cref="P:BreakfastApp.ViewModels.MainViewModel.GoToCreateCommand"/>.</summary>
+        </member>
+        <member name="P:BreakfastApp.ViewModels.MainViewModel.GoToCreateCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BreakfastApp.ViewModels.MainViewModel.GoToCreate"/>.</summary>
+        </member>
+        <member name="T:BreakfastApp.ViewModels.UpdateViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:BreakfastApp.ViewModels.UpdateViewModel.Name">
+            <inheritdoc cref="F:BreakfastApp.ViewModels.UpdateViewModel.name"/>
+        </member>
+        <member name="P:BreakfastApp.ViewModels.UpdateViewModel.ImageUri">
+            <inheritdoc cref="F:BreakfastApp.ViewModels.UpdateViewModel.imageUri"/>
+        </member>
+        <member name="P:BreakfastApp.ViewModels.UpdateViewModel.Description">
+            <inheritdoc cref="F:BreakfastApp.ViewModels.UpdateViewModel.description"/>
+        </member>
+        <member name="P:BreakfastApp.ViewModels.UpdateViewModel.Ingredients">
+            <inheritdoc cref="F:BreakfastApp.ViewModels.UpdateViewModel.ingredients"/>
+        </member>
+        <member name="P:BreakfastApp.ViewModels.UpdateViewModel.AddOn">
+            <inheritdoc cref="F:BreakfastApp.ViewModels.UpdateViewModel.addOn"/>
+        </member>
+        <member name="P:BreakfastApp.ViewModels.UpdateViewModel.Nutrition">
+            <inheritdoc cref="F:BreakfastApp.ViewModels.UpdateViewModel.nutrition"/>
+        </member>
+        <member name="F:BreakfastApp.ViewModels.UpdateViewModel.updateCommand">
+            <summary>The backing field for <see cref="P:BreakfastApp.ViewModels.UpdateViewModel.UpdateCommand"/>.</summary>
+        </member>
+        <member name="P:BreakfastApp.ViewModels.UpdateViewModel.UpdateCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:BreakfastApp.ViewModels.UpdateViewModel.Update"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ImageUri">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ImageUri" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Description">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Description" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Ingredients">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Ingredients" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AddOn">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AddOn" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Nutrition">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Nutrition" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Breakfasts">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Breakfasts" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsRefreshing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ImageUri">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ImageUri" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Description">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Description" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Ingredients">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Ingredients" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AddOn">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AddOn" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Nutrition">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Nutrition" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Breakfasts">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Breakfasts" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsRefreshing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
+        </member>
+    </members>
+</doc>

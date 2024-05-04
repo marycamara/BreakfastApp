@@ -1,0 +1,95 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BreakfastApp
+build_property.ProjectDir = /Users/marycamara/Desktop/BreakfastApp/BreakfastApp/BreakfastApp/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[/Users/marycamara/Desktop/BreakfastApp/BreakfastApp/BreakfastApp/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BreakfastApp.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/marycamara/Desktop/BreakfastApp/BreakfastApp/BreakfastApp/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BreakfastApp.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[/Users/marycamara/Desktop/BreakfastApp/BreakfastApp/BreakfastApp/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BreakfastApp.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/marycamara/Desktop/BreakfastApp/BreakfastApp/BreakfastApp/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BreakfastApp.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+
+[/Users/marycamara/Desktop/BreakfastApp/BreakfastApp/BreakfastApp/Views/CreatePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BreakfastApp.Views.CreatePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/CreatePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/CreatePage.xaml
+
+[/Users/marycamara/Desktop/BreakfastApp/BreakfastApp/BreakfastApp/Views/EditProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BreakfastApp.Views.EditProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/EditProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/EditProfilePage.xaml
+
+[/Users/marycamara/Desktop/BreakfastApp/BreakfastApp/BreakfastApp/Views/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BreakfastApp.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/LoginPage.xaml
+
+[/Users/marycamara/Desktop/BreakfastApp/BreakfastApp/BreakfastApp/Views/LogoutPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BreakfastApp.Views.LogoutPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/LogoutPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/LogoutPage.xaml
+
+[/Users/marycamara/Desktop/BreakfastApp/BreakfastApp/BreakfastApp/Views/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BreakfastApp.Views.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/MainPage.xaml
+
+[/Users/marycamara/Desktop/BreakfastApp/BreakfastApp/BreakfastApp/Views/RecipePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BreakfastApp.Views.RecipePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/RecipePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/RecipePage.xaml
+
+[/Users/marycamara/Desktop/BreakfastApp/BreakfastApp/BreakfastApp/Views/SettingPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BreakfastApp.Views.SettingPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/SettingPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/SettingPage.xaml
+
+[/Users/marycamara/Desktop/BreakfastApp/BreakfastApp/BreakfastApp/Views/ShoppingListPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BreakfastApp.Views.ShoppingListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/ShoppingListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/ShoppingListPage.xaml
+
+[/Users/marycamara/Desktop/BreakfastApp/BreakfastApp/BreakfastApp/Views/UpdatePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BreakfastApp.Views.UpdatePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/UpdatePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/UpdatePage.xaml

@@ -1,0 +1,44 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BreakfastApp.Views.RecipePage"
+             BackgroundColor="#101010">
+    <ScrollView>
+        <StackLayout>
+            <Label 
+                Text="Recipe Explorer"
+                FontSize="30"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                TextColor="#ff0000" />
+
+            <!-- CollectionView to display recipes in a list form -->
+            <CollectionView ItemsSource="{Binding Recipes}"
+                            SelectionMode="None"
+                            BackgroundColor="Black">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Margin="10" BackgroundColor="Black">
+                            <!-- Display recipe information here -->
+                            <Label Text="{Binding Title}" FontSize="20" TextColor="White" />
+                            <Image Source="{Binding Image}" HeightRequest="200" Aspect="AspectFill" />
+
+                            <!-- Display ingredients -->
+                            <Label Text="Ingredients:" FontSize="16" TextColor="White" Margin="0,10,0,0" />
+                            <ListView ItemsSource="{Binding Ingredients}" BackgroundColor="Black" SeparatorVisibility="None">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <ViewCell>
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label Text="{Binding}" FontSize="14" TextColor="White" />
+                                            </StackLayout>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

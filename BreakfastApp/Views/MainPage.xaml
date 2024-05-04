@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:BreakfastApp.ViewModels"
+             xmlns:models="clr-namespace:BreakfastApp.Models"
+             BackgroundColor="#121212"
+             x:DataType="viewmodels:MainViewModel"
+             x:Class="BreakfastApp.Views.MainPage">
+
+    <Grid Padding="16">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Your Recipe -->
+        <Label Grid.ColumnSpan="2"
+               Grid.Row="0"
+               HorizontalOptions="CenterAndExpand"
+               FontSize="30"
+               Text="Your Breakfast Gallery"
+               FontAttributes="Bold"
+               TextColor="#ff0000" />
+
+        <!-- Recipe you have created -->
+        <Label Grid.ColumnSpan="2"
+               Grid.Row="1"
+               Text=""
+               TextColor="#AAA"
+               Margin="0,16,0,0"/>
+
+        <!-- Scrollable list of Recipes -->
+        <ScrollView Grid.ColumnSpan="2"
+                    Grid.Row="2">
+            <RefreshView IsRefreshing="{Binding IsRefreshing}"
+                         Command="{Binding RefreshCommand}">
+                <CollectionView ItemsSource="{Binding Breakfasts}"
+                                SelectionMode="None">
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Vertical"
+                                           ItemSpacing="20" />
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="models:BreakfastList">
+                            <Frame Margin="0,0,0,16"
+                                   Padding="16"
+                                   CornerRadius="8"
+                                   HasShadow="True"
+                                   BackgroundColor="#cc2900"
+                                   BorderColor="#FF0000">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Grid.Column="0"
+                                           Source="{Binding Image}"
+                                           Aspect="AspectFill"
+                                           HeightRequest="150"
+                                           WidthRequest="150"
+                                           VerticalOptions="Center" />
+
+                                    <StackLayout Grid.Column="1"
+                                                 Margin="16,0,0,0"
+                                                 VerticalOptions="Center">
+                                        <!-- Name -->
+                                        <Label Text="{Binding Name}"
+                                               FontSize="20"
+                                               FontAttributes="Bold"
+                                               TextColor="White"/>
+
+                                        <!-- Description -->
+                                        <Label Text="{Binding Description}"
+                                               Margin="0,8,0,0"
+                                               TextColor="#AAA"
+                                               LineBreakMode="WordWrap" />
+
+                                        <!-- Ingrident -->
+                                        <FlexLayout BindableLayout.ItemsSource="{Binding Ingredients}"
+                                                    Wrap="Wrap"
+                                                    AlignItems="Start"
+                                                    Margin="0,8,0,0">
+                                            <BindableLayout.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Frame BackgroundColor="LightCyan"
+                                                           Padding="8"
+                                                           CornerRadius="6"
+                                                           Margin="0,0,8,8">
+                                                        <Label Text="{Binding}"
+                                                               TextColor="#333"
+                                                               FontSize="14"/>
+                                                    </Frame>
+                                                </DataTemplate>
+                                            </BindableLayout.ItemTemplate>
+                                        </FlexLayout>
+
+                                        <!-- AddOn -->
+                                        <FlexLayout BindableLayout.ItemsSource="{Binding AddOn}"
+                                                    Wrap="Wrap"
+                                                    AlignItems="Start"
+                                                    Margin="0,8,0,0">
+                                            <BindableLayout.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Frame BackgroundColor="Pink"
+                                                           Padding="8"
+                                                           CornerRadius="6"
+                                                           Margin="0,0,8,8">
+                                                        <Label Text="{Binding}"
+                                                               TextColor="#333"
+                                                               FontSize="14"/>
+                                                    </Frame>
+                                                </DataTemplate>
+                                            </BindableLayout.ItemTemplate>
+                                        </FlexLayout>
+
+                                        <!-- Action Buttons -->
+                                        <StackLayout Orientation="Horizontal"
+                                                     Spacing="20"
+                                                     Margin="0,16,0,0">
+                                            <!-- Delete Button -->
+                                            <Button Text="Delete"
+                                                    FontSize="14"
+                                                    FontAttributes="Bold"
+                                                    BackgroundColor="#990099"
+                                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:MainViewModel}}, Path=DeleteCommand}"
+                                                    CommandParameter="{Binding Id}"/>
+                                            
+                                            <!-- Edit Button -->
+                                            <Button Text="Edit"
+                                                    FontSize="14"
+                                                    FontAttributes="Bold"
+                                                    BackgroundColor="#000066"
+                                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:MainViewModel}}, Path=GoToUpdateCommand}"
+                                                    CommandParameter="{Binding Id}"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </RefreshView>
+        </ScrollView>
+<!-- StackLayout to contain buttons -->
+<StackLayout Grid.Row="3" Orientation="Horizontal" HorizontalOptions="Center">
+    <!-- Create New Breakfast Button -->
+    <Button Text="Create"
+            BackgroundColor="#ff0000"
+            Padding="5"
+            CornerRadius="50"
+            WidthRequest="100"
+            HeightRequest="100"
+            Command="{Binding GoToCreateCommand}"
+            TextColor="White"/>
+    
+    <!-- Go to ByChance Page Button -->
+    <Button BackgroundColor="#ffffff"
+            TextColor="#000000"
+            Text="Explorer"
+            Clicked="OnGoToByChancePageClicked"
+            CornerRadius="50"
+            WidthRequest="100"
+            HeightRequest="100"/>
+
+   <Button Text="Shopping List"
+        BackgroundColor="#000066"
+        TextColor="White"
+        Clicked="OnGoToShoppingListPageClicked"
+        CornerRadius="50"
+        WidthRequest="100"
+        HeightRequest="100"/>
+
+
+</StackLayout>
+
+
+
+    </Grid>
+</ContentPage>

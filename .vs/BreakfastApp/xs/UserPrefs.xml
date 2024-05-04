@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{278E9384-739C-4193-922A-FE7B98D8287F}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BreakfastApp" selected="True">
+            <Node name="BreakfastApp" expanded="True">
+              <Node name="Views" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.BreakfastApp PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E8128979-4EA1-4853-ADDF-9D20FE55E933" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E8128979-4EA1-4853-ADDF-9D20FE55E933" />
+</Properties>

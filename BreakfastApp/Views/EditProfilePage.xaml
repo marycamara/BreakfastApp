@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BreakfastApp.Views.EditProfilePage"
+             Title="EditProfilePage">
+    <StackLayout Padding="20">
+        <!-- Input fields for editing profile information -->
+        <Entry Placeholder="Name" />
+        <Entry Placeholder="Email" />
+        <Entry Placeholder="Password" IsPassword="True" />
+
+        <!-- Save button to save changes -->
+        <Button Text="Save"
+                Clicked="SaveButton_Clicked"
+                BackgroundColor="#FF3300"
+                TextColor="White"
+                CornerRadius="10"
+                HorizontalOptions="FillAndExpand"
+                Margin="0,20,0,0" />
+
+        
+            <!-- Cancel Button -->
+            <Button Text="Cancel"
+                    BackgroundColor="#CCCCCC"
+                    TextColor="Black"
+                    CornerRadius="10"
+                    WidthRequest="80"
+                    HorizontalOptions="Center"
+                    Margin="0,0,10,0"
+                    Clicked="Cancel_Clicked"/>
+    </StackLayout>
+</ContentPage>
